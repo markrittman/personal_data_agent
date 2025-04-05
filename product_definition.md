@@ -50,7 +50,7 @@ To clarify the user experience, this section walks through key interactions with
 4. **Storage Confirmation:** The data is then sent to BigQuery (behind the scenes). After a brief processing time, the UI notifies the user that the dataset has been successfully added. The user now sees “Cycling Workouts 2024” listed in their Data Sources list on the dashboard. There is a small indicator that the data is **indexed and ready** for queries. (If this were a large text dataset, here we would also show progress of embedding creation, but for numeric data it’s instant.)  
 5. **Continuous Update Option:** The interface also offers the user options to update this dataset later – e.g. upload a new file to overwrite, or schedule periodic appends. In our case, the user decides to later add their 2023 cycling data as well, which they can do by the same process, resulting in another table.
 
-![Mockup Illustration:* *Frame 1:* A dashboard screen showing “No data added yet. Get started by uploading your personal data.” *Frame 2:* The file upload modal with fields for dataset name and category. *Frame 3:* A confirmation message: “✅ Cycling Workouts 2024 uploaded. 1,045 records added.” The data source list now contains an entry for this dataset.](https://github.com/user-attachments/assets/0f8ecc47-ed87-40c7-8a33-077663936448)
+![mockup1](https://github.com/user-attachments/assets/7aa24112-a04d-4ae7-987e-4f0dbf4109bb)
 
 ### 2. Asking a Simple Question (Single Dataset Query)  
 **Scenario:** The user asks the chatbot a straightforward question about one of their datasets.  
