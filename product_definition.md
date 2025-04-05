@@ -6,6 +6,8 @@ Individuals today collect diverse personal datasets – from chat messages and h
 ## Technical Architecture (GCP Platform and Data)  
 **Overview:** The chatbot is built with GCP-native services for scalability, security, and integration with advanced AI. It follows a **multi-tenant architecture**: all users share the application and infrastructure, but each user’s data is isolated. The system dynamically discovers which data each user has provided and formulates queries accordingly. **Figure 1** illustrates a high-level multi-tenant design, where application workloads and data storage are compartmentalised per customer for security. Each user (tenant) shares the overall platform but has segregated data and access controls, ensuring their personal information remains invisible to others. 
 
+![figure1](https://github.com/user-attachments/assets/a5c4ddd8-2900-4427-b297-51ca32f6abed)
+
  *Figure 1: High-level multi-tenant architecture on GCP. Each customer’s application instance uses separate data stores (BigQuery, storage, etc.), enforced by Cloud IAM and optionally KMS for encryption. Shared services are minimised, and service accounts (SAs) are distinct per tenant to limit blast radius.*  
 
 ### Data Ingestion and Storage  
